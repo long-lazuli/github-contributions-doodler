@@ -1,0 +1,22 @@
+.days {
+	display: inline-grid;
+	width: auto;
+	grid-auto-flow: column;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 4px;
+	
+	input {
+		appearance: none;
+		color: transparent;
+		border: 1px solid #dee0e3;
+		border-radius: 1px;
+		height: 14.5px;
+		width: 15px;
+		&[value="0"] { background-color: #ebedf0; }
+		&[value="1"] { background-color: #9be9a8; }
+		&[value="2"] { background-color: #3fc462; }
+		&[value="3"] { background-color: #31a14e; }
+		&[value="4"] { background-color: #206e38; }
+	} 
+}
+
